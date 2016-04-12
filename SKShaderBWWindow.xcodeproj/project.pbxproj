@@ -15,6 +15,9 @@
 		3C21F0A61CBC8BBD00F88104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C21F0A41CBC8BBD00F88104 /* Main.storyboard */; };
 		3C21F0A81CBC8BBD00F88104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C21F0A71CBC8BBD00F88104 /* Assets.xcassets */; };
 		3C21F0AB1CBC8BBD00F88104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C21F0A91CBC8BBD00F88104 /* LaunchScreen.storyboard */; };
+		3C21F0B31CBC8CB400F88104 /* Rainbow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C21F0B21CBC8CB400F88104 /* Rainbow.jpg */; };
+		3C21F0B51CBC8F4800F88104 /* shader_bw.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3C21F0B41CBC8F4800F88104 /* shader_bw.fsh */; };
+		3C21F0B71CBC8FA900F88104 /* dummypixel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C21F0B61CBC8FA900F88104 /* dummypixel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		3C21F0A71CBC8BBD00F88104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C21F0AA1CBC8BBD00F88104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C21F0AC1CBC8BBD00F88104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C21F0B21CBC8CB400F88104 /* Rainbow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rainbow.jpg; sourceTree = "<group>"; };
+		3C21F0B41CBC8F4800F88104 /* shader_bw.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_bw.fsh; sourceTree = "<group>"; };
+		3C21F0B61CBC8FA900F88104 /* dummypixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dummypixel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 				3C21F09F1CBC8BBD00F88104 /* GameScene.sks */,
 				3C21F0A11CBC8BBD00F88104 /* GameViewController.h */,
 				3C21F0A21CBC8BBD00F88104 /* GameViewController.m */,
+				3C21F0B21CBC8CB400F88104 /* Rainbow.jpg */,
+				3C21F0B61CBC8FA900F88104 /* dummypixel.png */,
+				3C21F0B41CBC8F4800F88104 /* shader_bw.fsh */,
 				3C21F0A41CBC8BBD00F88104 /* Main.storyboard */,
 				3C21F0A71CBC8BBD00F88104 /* Assets.xcassets */,
 				3C21F0A91CBC8BBD00F88104 /* LaunchScreen.storyboard */,
@@ -144,10 +153,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C21F0B71CBC8FA900F88104 /* dummypixel.png in Resources */,
 				3C21F0A01CBC8BBD00F88104 /* GameScene.sks in Resources */,
 				3C21F0AB1CBC8BBD00F88104 /* LaunchScreen.storyboard in Resources */,
+				3C21F0B31CBC8CB400F88104 /* Rainbow.jpg in Resources */,
 				3C21F0A81CBC8BBD00F88104 /* Assets.xcassets in Resources */,
 				3C21F0A61CBC8BBD00F88104 /* Main.storyboard in Resources */,
+				3C21F0B51CBC8F4800F88104 /* shader_bw.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -263,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
