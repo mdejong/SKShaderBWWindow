@@ -40,6 +40,10 @@
 	</array>
 	<key>PrefersOpenGL</key>
 	<false/>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
