@@ -20,6 +20,8 @@
 
 @property (nonatomic, assign) CGPoint cropPointOffset;
 
+@property (nonatomic, retain) SKShapeNode *outlineNode;
+
 @property (nonatomic, assign) int frameOffset;
 
 @end
@@ -80,6 +82,27 @@
   cropNode.zPosition = 1;
   
   [self addChild:cropNode];
+  
+  // Outline around BW area
+  
+  SKShapeNode* pathShapeNode = [[SKShapeNode alloc] init];
+  
+  CGRect rect;
+  rect.origin = CGPointMake(-whiteSize.width/2, -whiteSize.height/2);
+  rect.size = whiteSize;
+  pathShapeNode.path = [UIBezierPath bezierPathWithRect:rect].CGPath;
+  
+  pathShapeNode.lineWidth = 3;
+  pathShapeNode.fillColor = [SKColor clearColor];
+  pathShapeNode.strokeColor = [SKColor darkGrayColor];
+  
+  pathShapeNode.zPosition = 2;
+  
+  pathShapeNode.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+  
+  [self addChild:pathShapeNode];
+  
+  self.outlineNode = pathShapeNode;
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -90,6 +113,15 @@
   int over = self.frameOffset % 300;
   
   whiteNode.size = CGSizeMake(self.whiteSize.width + over, self.whiteSize.height + over);
+  
+  SKShapeNode *outlineNode = self.outlineNode;
+
+  CGRect rect;
+  rect.origin = CGPointMake(-whiteNode.size.width/2, -whiteNode.size.height/2);
+  rect.size = whiteNode.size;
+  outlineNode.path = [UIBezierPath bezierPathWithRect:rect].CGPath;
+  
+  return;
 }
 
 @end
