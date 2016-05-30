@@ -5,5 +5,5 @@ This example makes use of the new OpenGL/Metal shader functionality of the SKSha
 
 ![Valid XHTML] (https://raw.githubusercontent.com/mdejong/SKShaderBWWindow/master/BWWindow.png)
 
-http://www.modejong.com/blog/post19_spritekit_bw_shader/index.html
+http://www.modejong.com/blog/post19_spritekit_bw_shader
 
